@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:webkeys_task/constant/colors.dart';
 import 'package:webkeys_task/constant/constant.dart';
+import 'package:webkeys_task/feature/product_details.dart/view/product_screen.dart';
 import 'package:webkeys_task/models/cookie_model.dart';
 import 'package:webkeys_task/widgets/custom_text.dart';
 import 'package:webkeys_task/widgets/premium_widget.dart';
@@ -99,20 +100,25 @@ class CookieOffersCard extends StatelessWidget {
               ),
             ),
           ),
-          Align(
-            alignment: Alignment.bottomRight,
-            child: Container(
-              width: 49.w,
-              height: 49.w,
-              decoration: const BoxDecoration(
-                shape: BoxShape.circle,
-                color: ColorUitls.blackColor,
-              ),
-              child: const Center(
-                child: Icon(
-                  Icons.arrow_forward,
-                  size: 28,
-                  color: ColorUitls.mainTextColor,
+          InkWell(
+            onTap: () => Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => const ProductDetailsScreen(),
+            )),
+            child: Align(
+              alignment: Alignment.bottomRight,
+              child: Container(
+                width: 49.w,
+                height: 49.w,
+                decoration: const BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: ColorUitls.blackColor,
+                ),
+                child: const Center(
+                  child: Icon(
+                    Icons.arrow_forward,
+                    size: 28,
+                    color: ColorUitls.mainTextColor,
+                  ),
                 ),
               ),
             ),

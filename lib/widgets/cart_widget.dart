@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:webkeys_task/bloc/cart/cart_cubit.dart';
 import 'package:webkeys_task/constant/colors.dart';
 import 'package:webkeys_task/constant/constant.dart';
 import 'package:webkeys_task/widgets/custom_text.dart';
 
 class CartWidget extends StatelessWidget {
-  final int countOfProducts;
-  const CartWidget({super.key, this.countOfProducts = 0});
+  const CartWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +20,7 @@ class CartWidget extends StatelessWidget {
           Align(
             alignment: Alignment.bottomCenter,
             child: Container(
-              width: 79.w,
+              width: 79.h,
               height: 82.h,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(16),
@@ -29,13 +30,21 @@ class CartWidget extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  CustomText(
-                    text: countOfProducts.toString(),
-                    textStyle: Constant.myTextStyle.copyWith(
-                        fontWeight: FontWeight.w600,
-                        fontSize: 20.sp,
-                        color: ColorUitls.blackColor),
-                  ),
+                  BlocConsumer<CartCubit, CartState>(
+                      buildWhen: (previous, current) =>
+                          current.runtimeType == NewItemAddedToOrderState ||
+                          previous.runtimeType == CartInitial,
+                      listener: (context, state) {},
+                      builder: (context, state) {
+                        final cubit = CartCubit.get(context);
+                        return CustomText(
+                          text: cubit.itemsSelected.toString(),
+                          textStyle: Constant.myTextStyle.copyWith(
+                              fontWeight: FontWeight.w600,
+                              fontSize: 20.sp,
+                              color: ColorUitls.blackColor),
+                        );
+                      }),
                   CustomText(
                     text: 'Products',
                     textStyle: Constant.myTextStyle.copyWith(
