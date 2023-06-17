@@ -40,7 +40,6 @@ class CookiePremiumCard extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(
-                      width: 102.w,
                       height: 43.h,
                       child: CustomText(
                         text: cookieModel.cookieName,

@@ -41,7 +41,6 @@ class HomeScreen extends StatelessWidget {
               ),
             ],
           ),
-          // color: ColorUitls.backgroundColor,
         ),
       ),
     );

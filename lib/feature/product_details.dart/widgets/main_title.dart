@@ -19,7 +19,6 @@ class MainTitle extends StatelessWidget {
         children: [
           const PremiumWidget(),
           SizedBox(
-            height: 89.h,
             child: CustomText(
               text: 'Cookies',
               textStyle: Constant.myTextStyle.copyWith(
