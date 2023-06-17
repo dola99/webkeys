@@ -16,6 +16,7 @@ class ListViewCookiePremium extends StatelessWidget {
         child: ListView.separated(
           separatorBuilder: (context, index) =>
               const SizedBox(width: Constant.generalPaddingHorizantel),
+          physics: const BouncingScrollPhysics(),
           scrollDirection: Axis.horizontal,
           padding: const EdgeInsets.symmetric(
               horizontal: Constant.generalPaddingHorizantel),

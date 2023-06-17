@@ -11,7 +11,7 @@ class PremiumWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 75.w,
+      width: 82.w,
       height: 20.h,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -22,7 +22,7 @@ class PremiumWidget extends StatelessWidget {
             textStyle: Constant.myTextStyle.copyWith(
                 color: ColorUitls.accentColor,
                 fontWeight: FontWeight.w400,
-                fontSize: 12),
+                fontSize: 12.sp),
           )
         ],
       ),

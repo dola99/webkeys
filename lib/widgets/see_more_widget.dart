@@ -20,7 +20,7 @@ class SeeMoreWidget extends StatelessWidget {
             text: 'See More',
             textStyle: Constant.myTextStyle.copyWith(
                 fontWeight: FontWeight.w600,
-                fontSize: 12,
+                fontSize: 12.sp,
                 color: ColorUitls.accentColor),
           ),
           SizedBox(

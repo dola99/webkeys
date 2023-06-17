@@ -59,7 +59,7 @@ class CookieOffersCard extends StatelessWidget {
                               text: cookieModel.cookieName,
                               textStyle: Constant.myTextStyle.copyWith(
                                   fontWeight: FontWeight.w400,
-                                  fontSize: 16,
+                                  fontSize: 16.sp,
                                   color: ColorUitls.mainTextColor),
                             ),
                           ),
@@ -67,7 +67,7 @@ class CookieOffersCard extends StatelessWidget {
                             text: '${cookieModel.priceBeforeDiscount}USD',
                             textStyle: Constant.myTextStyle.copyWith(
                                 fontWeight: FontWeight.w400,
-                                fontSize: 16,
+                                fontSize: 16.sp,
                                 decoration: TextDecoration.lineThrough,
                                 color: ColorUitls.mainTextColor),
                           )
@@ -82,13 +82,13 @@ class CookieOffersCard extends StatelessWidget {
                         children: [
                           const PremiumWidget(),
                           SizedBox(
-                            width: 28.w,
+                            width: 22.w,
                           ),
                           CustomText(
                             text: '${cookieModel.price}USD',
                             textStyle: Constant.myTextStyle.copyWith(
                                 fontWeight: FontWeight.w600,
-                                fontSize: 16,
+                                fontSize: 16.sp,
                                 color: ColorUitls.mainTextColor),
                           )
                         ],

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:webkeys_task/constant/colors.dart';
 import 'package:webkeys_task/constant/constant.dart';
 import 'package:webkeys_task/widgets/custom_text.dart';
@@ -16,7 +17,7 @@ class HeadersOffersSections extends StatelessWidget {
           text: 'Offers',
           textStyle: Constant.myTextStyle.copyWith(
               fontWeight: FontWeight.w300,
-              fontSize: 42,
+              fontSize: 42.sp,
               color: ColorUitls.mainTextColor),
         ),
         const SeeMoreWidget(),

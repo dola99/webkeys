@@ -40,12 +40,12 @@ class CookiePremiumCard extends StatelessWidget {
                   children: [
                     SizedBox(
                       width: 102.w,
-                      height: 41.64.h,
+                      height: 43.h,
                       child: CustomText(
                         text: cookieModel.cookieName,
                         textStyle: Constant.myTextStyle.copyWith(
                           fontWeight: FontWeight.w400,
-                          fontSize: 16,
+                          fontSize: 16.sp,
                           color: ColorUitls.mainTextColor,
                         ),
                       ),
@@ -69,8 +69,8 @@ class CookiePremiumCard extends StatelessWidget {
           Align(
             alignment: Alignment.topCenter,
             child: SizedBox(
-              width: 130.w,
-              height: 130.w,
+              width: 130.h,
+              height: 130.h,
               child: Image.asset(cookieModel.cookieImagePath),
             ),
           ),

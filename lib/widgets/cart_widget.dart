@@ -33,14 +33,14 @@ class CartWidget extends StatelessWidget {
                     text: countOfProducts.toString(),
                     textStyle: Constant.myTextStyle.copyWith(
                         fontWeight: FontWeight.w600,
-                        fontSize: 20,
+                        fontSize: 20.sp,
                         color: ColorUitls.blackColor),
                   ),
                   CustomText(
                     text: 'Products',
                     textStyle: Constant.myTextStyle.copyWith(
                         fontWeight: FontWeight.w600,
-                        fontSize: 10,
+                        fontSize: 10.sp,
                         color: ColorUitls.blackColor),
                   )
                 ],

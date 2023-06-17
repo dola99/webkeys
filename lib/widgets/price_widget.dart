@@ -21,17 +21,14 @@ class PriceWidget extends StatelessWidget {
             textStyle: Constant.myTextStyle.copyWith(
                 color: ColorUitls.mainTextColor,
                 fontWeight: FontWeight.w400,
-                fontSize: 16),
-          ),
-          SizedBox(
-            width: 3.w,
+                fontSize: 16.sp),
           ),
           CustomText(
             text: 'USD',
             textStyle: Constant.myTextStyle.copyWith(
                 color: ColorUitls.mainTextColor,
                 fontWeight: FontWeight.w400,
-                fontSize: 16),
+                fontSize: 16.sp),
           )
         ],
       ),

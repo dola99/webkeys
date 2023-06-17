@@ -42,7 +42,7 @@ class NavBarTab extends StatelessWidget {
                 text: nameOfTab,
                 textStyle: Constant.myTextStyle.copyWith(
                     fontWeight: FontWeight.w500,
-                    fontSize: 10,
+                    fontSize: 10.sp,
                     color: isSelected
                         ? ColorUitls.accentColor
                         : ColorUitls.navBarTabColor),

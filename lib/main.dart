@@ -15,11 +15,15 @@ class StartPoint extends StatelessWidget {
     return ScreenUtilInit(
       designSize: const Size(390, 844),
       minTextAdapt: true,
-      splitScreenMode: true,
+      useInheritedMediaQuery: false,
+      splitScreenMode: false,
       builder: (context, child) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          theme: ThemeData(scaffoldBackgroundColor: ColorUitls.backgroundColor),
+          theme: ThemeData(
+            scaffoldBackgroundColor: ColorUitls.backgroundColor,
+            textTheme: Typography.englishLike2018.apply(fontSizeFactor: 1.sp),
+          ),
           home: child,
         );
       },

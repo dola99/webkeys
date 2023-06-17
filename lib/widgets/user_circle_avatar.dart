@@ -29,14 +29,14 @@ class CircleAvater extends StatelessWidget {
                   text: 'Ahmed',
                   textStyle: Constant.myTextStyle.copyWith(
                       fontWeight: FontWeight.w600,
-                      fontSize: 18,
+                      fontSize: 18.sp,
                       color: ColorUitls.mainTextColor),
                 ),
                 CustomText(
                   text: 'Elfayoumi',
                   textStyle: Constant.myTextStyle.copyWith(
                       fontWeight: FontWeight.w400,
-                      fontSize: 14,
+                      fontSize: 14.sp,
                       color: ColorUitls.mainTextColor),
                 ),
               ],

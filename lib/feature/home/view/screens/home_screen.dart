@@ -16,6 +16,7 @@ class HomeScreen extends StatelessWidget {
       extendBody: true,
       bottomNavigationBar: const NavBarHome(),
       body: SingleChildScrollView(
+        physics: const BouncingScrollPhysics(),
         child: BackgroundContainer(
           child: Column(
             children: [

@@ -16,12 +16,15 @@ class HeaderCookiePremiumContainer extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          CustomText(
-            text: 'Cookies',
-            textStyle: Constant.myTextStyle.copyWith(
-                fontWeight: FontWeight.w300,
-                fontSize: 42,
-                color: ColorUitls.mainTextColor),
+          SizedBox(
+            height: 52.h,
+            child: CustomText(
+              text: 'Cookies',
+              textStyle: Constant.myTextStyle.copyWith(
+                  fontWeight: FontWeight.w300,
+                  fontSize: 42.sp,
+                  color: ColorUitls.mainTextColor),
+            ),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -31,7 +34,7 @@ class HeaderCookiePremiumContainer extends StatelessWidget {
                 text: 'Premium',
                 textStyle: Constant.myTextStyle.copyWith(
                     fontWeight: FontWeight.w300,
-                    fontSize: 28,
+                    fontSize: 28.sp,
                     color: ColorUitls.accentColor),
               ),
               // ignore: prefer_const_constructors
