@@ -9,4 +9,6 @@ class ColorUitls {
   static const backgroundContainerColor = Color(0xff363840);
   static const navBarColor = Color.fromRGBO(20, 20, 25, 1);
   static const navBarTabColor = Color.fromRGBO(52, 54, 62, 1);
+  static const firstLinerColor = Color.fromRGBO(13, 11, 16, 0);
+  static const secondLinerColor = Color.fromRGBO(13, 11, 16, 100);
 }

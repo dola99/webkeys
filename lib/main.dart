@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:webkeys_task/constant/colors.dart';
-import 'package:webkeys_task/feature/home/view/screens/home_screen.dart';
+
+import 'feature/product_details.dart/view/product_screen.dart';
 
 void main() {
   runApp(const StartPoint());
@@ -27,7 +28,7 @@ class StartPoint extends StatelessWidget {
           home: child,
         );
       },
-      child: const HomeScreen(),
+      child: const ProductDetailsScreen(),
     );
   }
 }
