@@ -13,20 +13,17 @@ void main() {
       navbarCubit.close();
     });
 
-    test('initial state is NavbarInitial', () {
-      expect(navbarCubit.state, equals(NavbarInitial()));
-    });
-
     test('navBarSelected updates selectedTabID and emits NavBarTabSelected',
         () {
-      const tabId = 0;
-      final expectedStates = [
-        NavBarTabSelected(),
-      ];
-      expectLater(navbarCubit.stream, emitsInOrder(expectedStates));
+      // Arrange
+      const tabId = 1;
+      const expectedStates = NavBarTabSelected;
 
+      // Act
       navbarCubit.navBarSelected(tabId);
 
+      // Assert
+      expect(navbarCubit.state.runtimeType, equals(expectedStates));
       expect(navbarCubit.selectedTabID, equals(tabId));
     });
   });

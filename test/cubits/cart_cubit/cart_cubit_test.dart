@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:webkeys_task/bloc/cart/cart_cubit.dart';
 
@@ -16,7 +14,7 @@ void main() {
     });
 
     test('initial state is CartInitial', () {
-      expect(cartCubit.state, equals(CartInitial()));
+      expect(cartCubit.state.runtimeType, equals(CartInitial));
     });
 
     test(

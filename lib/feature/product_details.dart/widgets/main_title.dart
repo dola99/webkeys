@@ -23,7 +23,7 @@ class MainTitle extends StatelessWidget {
               text: 'Cookies',
               textStyle: Constant.myTextStyle.copyWith(
                   fontWeight: FontWeight.w600,
-                  fontSize: 80.sp,
+                  fontSize: 70.sp,
                   color: ColorUitls.mainTextColor),
             ),
           ),
